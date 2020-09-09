@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff8877"
+        android:layout_gravity="center"
+        android:text="Hiiii" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fac1ff"
+            android:text="WELCOME" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22ff44"
+            android:layout_gravity="center"
+            android:text="THANK" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#12ff99"
+            android:text="YOU" />
+
+    </TableRow>
+    </TableLayout>
+
+
