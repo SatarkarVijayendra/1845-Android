@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private Button clear;
     private Button decimal;
     private Button equal;
-    private TextView info;
+    private TextView preresult;
     private TextView result;
-    private TextView finalans;
+    private TextView answer;
     private final char ADDITION = '+';
     private final char SUBTRACTION= '-';
     private final char DIVISION= '/';
@@ -48,18 +48,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupUIViews();
-        info.setText("0");
+        preresult.setText("0");
 
         zero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
+                if(preresult.getText()=="0") {
                     //info.setText(null);
                     Toast toast = Toast.makeText(getApplicationContext(),"Invalid Num!",Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 else{
-                    info.setText(info.getText().toString() + "0");
+                    preresult.setText(preresult.getText().toString() + "0");
                 }
                 
 
@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "1");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "1");
                 }
                 else{
-                    info.setText(info.getText().toString() + "1");
+                    preresult.setText(preresult.getText().toString() + "1");
                 }
 
 
@@ -85,12 +85,12 @@ public class MainActivity extends AppCompatActivity {
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "2");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "2");
                 }
                 else{
-                    info.setText(info.getText().toString() + "2");
+                    preresult.setText(preresult.getText().toString() + "2");
                 }
 
 
@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
         three.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "3");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "3");
                 }
                 else{
-                    info.setText(info.getText().toString() + "3");
+                    preresult.setText(preresult.getText().toString() + "3");
                 }
 
 
@@ -117,12 +117,12 @@ public class MainActivity extends AppCompatActivity {
         four.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "4");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "4");
                 }
                 else{
-                    info.setText(info.getText().toString() + "4");
+                    preresult.setText(preresult.getText().toString() + "4");
                 }
 
 
@@ -132,12 +132,12 @@ public class MainActivity extends AppCompatActivity {
         five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "5");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "5");
                 }
                 else{
-                    info.setText(info.getText().toString() + "5");
+                    preresult.setText(preresult.getText().toString() + "5");
                 }
 
 
@@ -147,12 +147,12 @@ public class MainActivity extends AppCompatActivity {
         six.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "6");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "6");
                 }
                 else{
-                    info.setText(info.getText().toString() + "6");
+                    preresult.setText(preresult.getText().toString() + "6");
                 }
 
 
@@ -162,12 +162,12 @@ public class MainActivity extends AppCompatActivity {
         seven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "7");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "7");
                 }
                 else{
-                    info.setText(info.getText().toString() + "7");
+                    preresult.setText(preresult.getText().toString() + "7");
                 }
 
 
@@ -177,12 +177,12 @@ public class MainActivity extends AppCompatActivity {
         eight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "8");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "8");
                 }
                 else{
-                    info.setText(info.getText().toString() + "8");
+                    preresult.setText(preresult.getText().toString() + "8");
                 }
 
 
@@ -192,12 +192,12 @@ public class MainActivity extends AppCompatActivity {
         nine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText()=="0") {
-                    info.setText(null);
-                    info.setText(info.getText().toString() + "9");
+                if(preresult.getText()=="0") {
+                    preresult.setText(null);
+                    preresult.setText(preresult.getText().toString() + "9");
                 }
                 else{
-                    info.setText(info.getText().toString() + "9");
+                    preresult.setText(preresult.getText().toString() + "9");
                 }
 
             }
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                     else{
-                        info.setText(info.getText().toString() + ".");
+                    preresult.setText(preresult.getText().toString() + ".");
                         dec=true;
                     }
                     }
@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(info.getText().toString().equals("")){
+                if(preresult.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(),"Enter Num",Toast.LENGTH_SHORT);
                     toast.show();
                 }
@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
                     calculate();
                     ACTION = ADDITION;
                     result.setText(String.valueOf(val1) + "+");
-                    info.setText("0");
+                    preresult.setText("0");
                 }
                 dec=false;
 
@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(info.getText().toString().equals("")){
+                if(preresult.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(),"Enter Num",Toast.LENGTH_SHORT);
                     toast.show();
                 }
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
                     calculate();
                     ACTION = SUBTRACTION;
                     result.setText(String.valueOf(val1) + "-");
-                    info.setText("0");
+                    preresult.setText("0");
                 }
                 dec=false;
 
@@ -266,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
         mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText().toString().equals("")){
+                if(preresult.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(),"Enter Num",Toast.LENGTH_SHORT);
                     toast.show();
                 }
@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
                     calculate();
                     ACTION = MULTIPLICATION;
                     result.setText(String.valueOf(val1) + "*");
-                    info.setText("0");
+                    preresult.setText("0");
                 }
                 dec=false;
 
@@ -284,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
         div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(info.getText().toString().equals("")){
+                if(preresult.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(),"Enter Num",Toast.LENGTH_SHORT);
                     toast.show();
                 }
@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
                     calculate();
                     ACTION = DIVISION;
                     result.setText(String.valueOf(val1) + "/");
-                    info.setText("0");
+                    preresult.setText("0");
                 }
                 dec=false;
 
@@ -304,12 +304,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(info.getText().toString().equals("")){
+                if(preresult.getText().toString().equals("")){
                     Toast toast = Toast.makeText(getApplicationContext(),"Enter Num",Toast.LENGTH_SHORT);
                     toast.show();
                 }
 
-                else if(info.getText()=="0"){
+                else if(preresult.getText()=="0"){
 
                     Toast toast = Toast.makeText(getApplicationContext(),"Invalid Num!",Toast.LENGTH_SHORT);
                     toast.show();
@@ -317,8 +317,8 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     calculate();
                     ACTION = EQUAL;
-                    finalans.setText(result.getText().toString() + String.valueOf(val2));
-                    info.setText("0");
+                    answer.setText(result.getText().toString() + String.valueOf(val2));
+                    preresult.setText("0");
                     result.setText(String.valueOf(val1));
                 }
                 dec=false;
@@ -331,17 +331,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                if(info.getText().length()>0){
-                    CharSequence name= info.getText().toString();
-                    info.setText(name.subSequence(0,name.length()-1));
+                if(preresult.getText().length()>0){
+                    CharSequence name= preresult.getText().toString();
+                    preresult.setText(name.subSequence(0,name.length()-1));
 
                 }
                 else{
                     val1=Double.NaN;
                     val2=Double.NaN;
-                    info.setText("0");
+                    preresult.setText("0");
                     result.setText(null);
-                    finalans.setText(null);
+                    answer.setText(null);
 
                 }
                 dec=false;
@@ -365,19 +365,19 @@ public class MainActivity extends AppCompatActivity {
         sub= (Button)findViewById(R.id.btnsub);
         mul= (Button)findViewById(R.id.btnmul);
         div= (Button)findViewById(R.id.btndiv);
-        equal=(Button)findViewById((R.id.btneq));
-        clear=(Button)findViewById(R.id.btnclr);
+        equal=(Button)findViewById((R.id.btnequal));
+        clear=(Button)findViewById(R.id.btnclear);
         decimal=(Button)findViewById(R.id.btndec);
-        info=(TextView)findViewById(R.id.txtin);
-        result=(TextView)findViewById(R.id.txtout);
-        finalans=(TextView)findViewById(R.id.txtres);
+        preresult=(TextView)findViewById(R.id.txtinput);
+        result=(TextView)findViewById(R.id.txtoutput);
+        answer=(TextView)findViewById(R.id.txtresult);
 
 
     }
 
     private void calculate(){
         if(!Double.isNaN(val1)){
-            val2=Double.parseDouble(info.getText().toString());
+            val2=Double.parseDouble(preresult.getText().toString());
 
             switch(ACTION) {
                 case ADDITION:
@@ -397,7 +397,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         else{
-            val1 = Double.parseDouble(info.getText().toString());
+            val1 = Double.parseDouble(preresult.getText().toString());
         }
 
     }
