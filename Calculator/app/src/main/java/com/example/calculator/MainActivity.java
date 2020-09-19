@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setupUIViews();
+        setupViews();
         preresult.setText("0");
 
         zero.setOnClickListener(new View.OnClickListener() {
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    calculate();
+                    compute();
                     ACTION = ADDITION;
                     result.setText(String.valueOf(val1) + "+");
                     preresult.setText("0");
@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    calculate();
+                    compute();
                     ACTION = SUBTRACTION;
                     result.setText(String.valueOf(val1) + "-");
                     preresult.setText("0");
@@ -271,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    calculate();
+                    compute();
                     ACTION = MULTIPLICATION;
                     result.setText(String.valueOf(val1) + "*");
                     preresult.setText("0");
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    calculate();
+                    compute();
                     ACTION = DIVISION;
                     result.setText(String.valueOf(val1) + "/");
                     preresult.setText("0");
@@ -315,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    calculate();
+                    compute();
                     ACTION = EQUAL;
                     answer.setText(result.getText().toString() + String.valueOf(val2));
                     preresult.setText("0");
@@ -350,7 +350,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void setupUIViews(){
+    private void setupViews(){
         one= (Button)findViewById(R.id.btn1);
         two= (Button)findViewById(R.id.btn2);
         three= (Button)findViewById(R.id.btn3);
@@ -375,7 +375,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void calculate(){
+    private void compute(){
         if(!Double.isNaN(val1)){
             val2=Double.parseDouble(preresult.getText().toString());
 
