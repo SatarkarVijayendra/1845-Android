@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Material Design</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="gender">Gender:</string>
+
+    <string-array name="district">
+        <item>North Goa</item>
+        <item>South Goa</item>
+    </string-array>
+</resources>
