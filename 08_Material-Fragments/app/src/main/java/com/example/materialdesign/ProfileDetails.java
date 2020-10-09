@@ -7,7 +7,4 @@ public class ProfileDetails {
         String phone= "8007854260";
         String password="android";
 
-
-
-
 }
